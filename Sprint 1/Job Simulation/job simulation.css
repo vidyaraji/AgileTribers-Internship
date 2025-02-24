@@ -1,0 +1,136 @@
+.main{
+    background-color: black;
+    margin:0;
+}
+.logo{
+    position: absolute;
+    border-radius: 50%;
+}
+.home{
+    padding:10px;
+    background-color: white;
+    position: sticky;
+    top:0;
+
+}
+.home div {
+    display: inline-block;
+    width:100%;
+    
+}
+.home  a{
+    padding: 70px;
+    margin-bottom:50px;
+    margin-left:10%;
+    color:#226F54;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.title{
+    font-family: Papyrus;
+    text-align: center;
+    font-size: 100px;
+    color:#F4EBD9;
+    animation: titlee 1s linear forwards;
+    animation-delay: 2s;
+
+}
+@keyframes titlee {
+    100%{
+        transform: rotate(360deg);
+    }
+  
+}
+.img{
+   margin:10%;
+   margin-top: 5%;
+}
+.intotxt{
+    font-family: Lucida Handwriting;
+    font-size: 80px;
+    color:#6D213C;
+    text-align: center;
+    animation: moveup 0.2s linear forwards;
+    animation-delay: 5s;
+}
+.text{
+    color:#95B8D1;
+}
+@keyframes moveup {
+    100%{
+    opacity:2;
+	transform:translatex(100px);
+    }
+}
+.anime {
+    float:right;
+    margin:0;
+}
+.service-offered{
+    display: block;
+    justify-items: center;
+    margin:5%;
+}
+.service-offered h1{
+    font-size: 100px;
+    color:#C0F5FA;
+}
+.service-offered a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.box1{
+    padding: 70px;
+    background-color: #FFE4F3;
+    margin:2%;
+}
+.box1:hover{
+    background-color: #F93943;
+    padding: 50px;
+    margin: 5%;
+    scale:2;
+}
+.box2:hover{
+    background-color: #F93943;
+    padding: 50px;
+    margin: 5%;
+    scale:2;
+}
+.box3:hover{
+    background-color: #F93943;
+    padding: 50px;
+    margin: 5%;
+    scale:2;
+}
+.box2{
+    padding: 75px;
+    margin:2%;
+    background-color: #FFE4F3;
+}
+.box3{
+    padding: 90px;
+    margin:2%;
+    background-color: #FFE4F3;
+}
+.contact{
+    background-color: #C4EBC8;
+    padding-left: 40px;
+    color: #713E5A;
+    font-weight: bolder;
+    text-align: center;
+}
+.contact-details{
+    margin:5%;
+}
+.media-contact a{
+    padding:10px;
+    margin: 5%;
+    margin-bottom: 0%;
+}
+.copyrights{
+    color:white;
+    text-align: center;
+}
