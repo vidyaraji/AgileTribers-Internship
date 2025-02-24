@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <title>Task 2</title>
+        <style>
+            .ex3{
+                border: 4px black;
+                border-collapse: collapse ;
+                text-align: center;
+            }
+            .ex4{
+                border-collapse: collapse ;
+                width: 25%;
+                text-align: left;
+            }
+            .ex4 th, .ex4 td{
+                border: 1px solid black;
+                font-family:  "Calibri", sans-serif;
+                padding: 5px;
+                font-weight: 60;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Exercise 1-->
+        <h1>HTML TABLE</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro Comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernest Handle</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+            </tbody>
+        </table>
+        <!--Exercise 2-->
+        <h1>Simple Table View</h1>
+        <table border="2px">
+            <tr>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Population</th>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Washington, D.C.</td>
+                <td>328 million</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>New Delhi</td>
+                <td>1.366 billion</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>Tokyo</td>
+                <td>126 million</td>
+            </tr>
+        </table>
+        <!--Exercise 3-->
+        <h1>Using colspan</h1>
+        <table border="2px" class="ex3" >
+            <tr>
+                <th>Name</th>
+                <th>Expense</th>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>$10</td>
+            </tr>
+        <tr>
+            <td>priya</td>
+            <td>$8</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sum: $18</td>
+        </tr>
+        </table>
+        <!--Exercise 4-->
+        <h1>Table with Name and Age</h1>
+        <table  class="ex4" >
+            <tr>
+                <th colspan="2"><b>Full Name</b></th>
+                <th><b>Age</b></th>
+
+            </tr>
+            <tr >
+                <td>Fabio</td>
+                <td>Cimo</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Jasmin</td>
+                <td>Brown</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Wick</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Dawn</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td colspan="2">Average Age</td>
+                <td>22</td>
+            </tr>
+        </table>
+        <!--Exercise 5-->
+        <h1>Colspan and Rowspan Usage</h1>
+        <table border="2px">
+            <tr>
+                <th colspan="2" rowspan="2">Header(Spans 2 columns and 2 rows)</th>
+                <td>data</td> 
+            </tr>
+            <tr>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </table>
+        <!--Exercise 6-->
+        <h1>Complex Table Structure</h1>
+        <table border="2px" style="width: 40%" >
+            <tr>
+                <th colspan="5"> numbers</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td colspan="3">7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td rowspan="2">10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+
+            </tr>
+        </table>
+        <!--Exercise 7-->
+        <h1>Time Table</h1>
+        <table border="4px" style="width: 40%">
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <th>mon</th>
+                <th>tues</th>
+                <th>wed</th>
+                <th>Thurs</th>
+                <th>fri</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+            </tr>
+        </table>
+        <!--Exercise 8-->
+        <h1>Using Image in HTML</h1>
+        <img src="img1.jpeg" alt="First Image" height="300px" width="400px">
+        <img src="img2.png" alt="Second Image" height="300px" width="400px">
+        <!--Exercise 9-->
+        <h1>Please Fill And Submit Form</h1>
+        <hr>
+        <form method="get">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="your name.."><br><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="abc@gmail.com"><br><br>
+            <button type="button" >Submit</button>
+        </form>
+        <!--Exercise 10-->
+        <h1>Please Fill And Submit Form</h1>
+        <hr>
+        <form method="get">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="your name.."><br><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="abc@gmail.com"><br><br>
+            <p>Select A color you like:</p>
+            <input type="radio" name="color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" name="color" value="green">
+            <label for="green">Green</label><br>
+            <input type="radio" name="color" value="orange">
+            <label for="orange">Orange</label><br>
+            <button type="button" >Submit</button>
+        </form>
+        <!--Exercise 11-->
+        <h1>Please Fill And Submit Form</h1>
+        <hr>
+        <form method="get">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="your name.."><br><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="abc@gmail.com"><br><br>
+            <p>Select A color you like:</p>
+            <input type="radio" name="color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" name="color" value="green">
+            <label for="green">Green</label><br>
+            <input type="radio" name="color" value="orange">
+            <label for="orange">Orange</label><br>
+            <label for="for_color">Select Your Favorite Color:</label>
+            <select name="for_color">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="blue">Blue</option>
+            </select><br>
+            <button type="button" >Submit</button><br><br>
+        </form>
+         <!--Exercise 12-->
+         <h1>Please Fill And Submit Form</h1>
+         <hr>
+         <form method="get">
+             <label for="name">Name:</label>
+             <input type="text" placeholder="your name.."><br><br>
+             <label for="email">Email</label>
+             <input type="email" placeholder="abc@gmail.com"><br><br>
+             <p>Select A color you like:</p>
+             <input type="radio" name="color" value="red">
+             <label for="red">Red</label><br>
+             <input type="radio" name="color" value="green">
+             <label for="green">Green</label><br>
+             <input type="radio" name="color" value="orange">
+             <label for="orange">Orange</label><br>
+             <label for="for_color">Select Your Favorite Color:</label>
+             <select name="for_color">
+                 <option value="red">Red</option>
+                 <option value="green">Green</option>
+                 <option value="orange">Orange</option>
+                 <option value="blue">Blue</option>
+             </select>
+             <p> Choose Your Skill Level</p>
+             <input type="checkbox" name="Beginner">
+             <label for="Beginner">Beginner</label><br>
+             <input type="checkbox" name="intermediate">
+             <label for="intermediate">Intermediate</label><br>
+             <input type="checkbox" name="advanced">
+             <label for="advanced"">Advanced</label><br>
+             <button type="button" >Submit</button><br><br>
+         </form>
+         <!--Exercise 13-->
+         <h1>Image Showcase Using Div Tag</h1> 
+         <hr>
+         <div>Div-1
+            <h3> beautiful Sunset</h3>
+            <img src="sunset.jpeg" alt="sunset_image">
+            <p>The Magic of Sunsets: There's something truly magical about watching the sun dip below the horizon, painting the sky with hues of orange, pink, and purple.
+                 Sunsets remind us to slow down and appreciate the fleeting moments of beauty in our lives.The Magic of Sunsets: There's something truly magical about watching the sun dip below the horizon, painting the sky with hues of orange, pink, and purple.
+                  Sunsets remind us to slow down and appreciate the fleeting moments of beauty in our lives.</p>
+            <hr>
+        </div>
+        <div>Div-2
+            <h3>Majestic Mountains</h3>
+            <img src="blackhole.jpeg" alt="blackhole_image">
+            <p>A black hole is a place in space where gravity pulls so much that even light can not get out. The gravity is so strong because matter has been squeezed into a tiny space. This can happen when a star is dying.
+                Because no light can get out, people can't see black holes. They are invisible.There are likely millions of black holes in our galaxy, and we will probably never know where they are. ...
+                If you fell into a black hole, you would never escape. ...
+                If you fell into a stellar-size black hole, you could turn into human spaghetti. ...
+                A black hole could fit in your pocket.</p>
+        </div>
+        <!--Exercise 14-->
+        <h1>Embedding Videos</h1>
+        <iframe src="https://www.youtube.com/embed/KvN3JXICzdM?si=YKyGl3p-_OViBD7M"" title="description" width="560" height="315" allowfullscreen allow="autoplay; accelerometer" ></iframe>
+        <!--Exercise 15-->
+        <h2>Student grading table with average and minimum scores</h2>
+        <div class="grading">
+        <table border="2px" style="width: 50%">
+           <h3>HTML Table Example</h3>
+            <tr>
+                <th colspan="2"> Student Name</th>
+                <th colspan="3">labs</th>
+                <th rowspan="2">Avg</th>
+            </tr>
+            <tr>
+                <th>First</th>
+                <th>last</th>
+                <th>Lab1</th>
+                <th>Lab2</th>
+                <th>Lab3</th>
+            </tr>
+            <tr>
+                <td>Sol</td>
+                <td>Rosenberg</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100.0</td>
+            </tr>
+            <tr>
+                <td>Frank</td>
+                <td>Rizzo</td>
+                <td>50</td>
+                <td>60</td>
+                <td>90</td>
+                <td>66.6</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>Kam</td>
+                <td>90</td>
+                <td>80</td>
+                <td>60</td>
+                <td>76.6</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Summary</th>
+                <th>Avg</th>
+                <td>80.0</td>
+                <td>80.0</td>
+                <td>83.3</td>
+                <td>81.1</td>
+            </tr>
+            <tr>
+                <th>Min</th>
+                <td>50</td>
+                <td>60</td>
+                <td>60</td>
+                <td>66.6</td>
+            </tr>
+        </table>
+    </body>
+</html>
