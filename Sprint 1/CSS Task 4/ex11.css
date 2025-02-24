@@ -1,0 +1,45 @@
+.ex11{
+    margin:10%;
+    background-color: #CAD5CA;
+}
+.ex11 header{
+    padding:30px;
+    text-align: center;
+}
+.ex11 header img{
+    float:left;
+    margin:10px;
+    /* width:"50px";
+    height:"50px"; */
+}
+.ex11 nav{
+    display: inline block;
+    background-color: black;
+    color:white;
+}
+.section1-ex11{
+    background-color: white;
+    margin:1%;
+    margin-left: 2%;
+    margin-right: 20%;
+}
+.section2-ex11{
+    background-color: white;
+    margin:1%;
+    margin-right: 20%;
+    margin-left: 2%;
+}
+
+.aside1-ex11{
+    float:right;
+    padding: 10px;
+}
+.aside2-ex11{
+    padding: 10px;
+    float:right ;
+}
+.ex11 footer{
+    background-color: #8DAA9D;
+    padding:20px;
+}
+

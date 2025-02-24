@@ -1,0 +1,42 @@
+.ex13{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:15%;
+    width:25%;
+    height:25%;
+    color:white;
+    text-align: center;
+    align-items:center;
+}
+
+.header-ex13{
+    padding:30px;
+    background-color: #1B1B1E;
+    margin:2px;
+}
+.nav-ex13{
+    background-color: #A3A3A3;
+    margin: 2px;
+}
+.section-ex13{
+    margin: 2px;
+    background-color: #C9C9C9;
+    padding:5px;
+}
+.section-ex13 div{
+    display: inline-block;
+    gap:10px;
+    padding:50px;
+    margin-top:4%;
+    background-color: white;
+}
+.section-ex13 aside{
+    background-color: #424242;
+
+    padding:30px;
+    margin-top:0;
+}
+.footer-ex13{
+    margin:2px;
+    background-color: #1B1B1E;
+}

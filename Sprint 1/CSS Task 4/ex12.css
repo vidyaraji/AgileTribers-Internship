@@ -1,0 +1,41 @@
+.ex12{
+    margin:10%;
+    width:20%;
+    height:30%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: white;
+    text-align: center;
+}
+.head-ex12{
+    background-color: black;
+    grid-column: span 2;
+    padding: 1px;
+    /* margin: 2px; */
+}
+.nav-ex12{
+    background-color: #9999A1;
+    grid-column: span 2;
+}
+.main-ex12{
+    background-color: #E1E5F2;
+    padding: 30px;
+    margin: 2px;
+    margin-left:5%;
+}
+.aside-ex12{
+    background-color: #9999A1;
+    padding: 30px;
+    margin: 2px;
+    margin-right:5%;
+}
+.footer-ex12{
+    position:fixed;
+    bottom:0;
+    width:20%;
+    height:3%;
+    background-color: #66666E;
+    margin: 2px;
+    grid-column: span 2;
+
+}

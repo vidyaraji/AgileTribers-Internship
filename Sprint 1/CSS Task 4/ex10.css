@@ -1,0 +1,73 @@
+.ex10{
+    margin:10%;
+    width:30%;
+    height:30%;
+    text-align: center;
+}
+.ex10 header{
+    background-color: black;
+    padding: 10px;
+    margin:2px;
+}
+.ex10 header div{
+    border:3px solid blue;
+    margin-left:40%;
+    margin-right:40%;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+}
+@keyframes spin{
+    0%{
+        
+    }
+    50%{
+        transform: rotate(50deg);
+        scale: 2;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ex10 nav{
+    background-color: #CAD5CA;
+    margin:2px;
+    padding: 5px;
+}
+.ex10 nav a{
+    display: inline-block;
+    margin:5px;
+    animation: 3s scaling infinite;
+}
+@keyframes scaling {
+    0%{
+        scale: 2;
+    }
+    
+}
+.ex10 article{
+    background-color: #CAD5CA;
+    margin:2px;
+    padding: 35px;
+}
+.ex10 section{
+    margin:0;
+}
+.ex10 section{
+    margin:2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ex10 section div{
+    background-color: #CAD5CA;
+    margin:5px;
+    grid-row-gap: 10px;
+    padding: 30px;
+}
+.ex10 footer{
+    background-color: #CAD5CA;
+    margin:2px;
+    padding: 10px;
+}

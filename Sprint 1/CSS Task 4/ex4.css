@@ -1,0 +1,49 @@
+.ex4{
+    border:2px solid blue;
+    width:30%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.ex4 p{
+    margin:0;
+}
+.head-ex4{
+    grid-column: span 3;
+    border:2px solid blue;
+    padding: 20px;
+}
+.head-ex4:hover{
+    background-color: #077187;
+}
+.menu-ex4{
+    grid-row: span 2;
+    padding: 20px;
+    border:2px solid blue;
+}
+.menu-ex4:hover{
+    background-color: #077187;
+}
+.main-ex4{
+    padding: 20px;
+    border:2px solid blue;
+}
+.main-ex4:hover{
+    background-color: #077187;
+}
+.right-ex4{
+    padding: 20px;
+    border:2px solid blue;
+}
+.right-ex4:hover{
+    background-color: #077187;
+}
+.footer-ex4{
+    grid-column:span 2;
+    padding: 20px;
+    border:2px solid blue;
+}
+.footer-ex4:hover{
+    background-color: #077187;
+}

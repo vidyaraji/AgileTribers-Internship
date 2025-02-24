@@ -1,0 +1,77 @@
+.ex5{
+    background-color: #CAD5CA;
+    margin:10%;
+    color: white;
+    padding: 30px;
+    width:20%;
+    /* height:50%; */
+}
+
+.ex5 header{
+    background-color: #253031;
+    padding: 10px;
+    margin-right: 70%;
+}
+.ex5 nav{
+    background-color: #92977E;
+}
+.ex5 section{
+    background-color: #92977E;
+    margin: 4px;
+    padding:10px;
+}
+.ex5 main{
+    background-color: #253031;
+    margin: 4px;
+    margin-right:50%;
+    padding: 30px;
+
+}
+.ex5 aside{
+    padding: 30px;
+    background-color: #B7B5B3;
+    float: right;
+}
+.ex5 footer{
+    background-color: #92977E;
+    /* margin: 4px; */
+    padding: 20px;
+}
+@media screen and (max-width:1200px) {
+    .ex5-container{
+        background-color: #CAD5CA;
+        display: grid;
+        grid-template-rows: 1fr;
+        color: white;
+       
+    }
+    /* .ex5-container{
+        margin:10%;
+    } */
+     .ex5 header{
+        background-color: #253031;
+        padding: 20px;
+        margin: 5%;
+    } 
+
+     .ex5 nav{
+        margin: 5%;
+        background-color: #92977E;
+        padding: 20px;
+    }
+    .ex5 section{
+        margin: 4%;
+        padding:20px;
+    }
+    .ex5 main{
+        background-color: #253031;
+        margin-right:20%;
+        padding: 20px;
+        margin: 4%;
+    
+    }
+    .ex5 footer{
+        margin: 4%;
+        padding:20px;
+    }
+}

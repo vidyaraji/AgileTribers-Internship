@@ -1,0 +1,42 @@
+.ex3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:20%;
+    height: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.head-ex3{
+    grid-column: span 2;
+    background-color: #bbbdbb;
+    margin:4px;
+}
+.nav-ex3{
+    grid-column: span 2;
+    margin:4px;
+    background-color: #bbbdbb;
+}
+.main-ex3{
+    grid-row: span 2;
+    margin:4px;
+    background-color: #bbbdbb;
+}
+.aside1-ex3{
+    margin:4px;
+    background-color: #bbbdbb;
+}
+.sec-ex3{
+    margin:4px;
+    background-color: #bbbdbb;
+}
+.aside2-ex3{
+    grid-column: span 2;
+    margin:4px;
+    background-color: #bbbdbb;
+}
+.footer-ex3{
+    grid-column: span 2;
+    margin:4px;
+    background-color: #bbbdbb;
+}
