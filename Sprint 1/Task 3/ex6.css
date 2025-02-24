@@ -1,0 +1,44 @@
+.inside-container{
+    margin-left:20%;
+    margin-right:20%;
+
+}
+.headingex6{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+.headingex6 ul{
+    font-size: 15px;
+    float: right;
+}
+.headingex6 ul a{
+    margin-right: 10px;
+}
+.blog {
+    margin-top:10%;
+    margin-left:10%;
+}
+.blog a{
+    font-size: 30px;
+}
+.blog p{
+    font-size:15px
+}
+.blog h3{
+    float:right;
+    background-color: orange;
+    padding: 20px;
+}
+.blog ul a{
+    font-size:20px;
+    display: block;
+}
+.links{
+    background-color: red;
+    color:white;
+}
+.links p{
+    font-size: 20px;
+}

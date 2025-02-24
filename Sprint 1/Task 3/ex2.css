@@ -1,0 +1,17 @@
+.text{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    align-items:baseline;
+    column-gap:0;
+}
+.text::after, .text::before{
+content: "";
+height: 1px; 
+background-color: black;
+display:block; 
+}
+.ex2{
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+}

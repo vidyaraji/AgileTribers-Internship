@@ -1,0 +1,21 @@
+.ex7{
+    background-color: #565857;
+    margin-left: 15%;
+    margin-right:15%;
+}
+.ex7 header{
+    color:#6F9CEB;
+    font-size:50px;
+    font-weight:bold;
+}
+.ex7 p{
+    padding-top:20px;
+    color:white
+}
+.ex7 h2{
+    font-size: 25px;
+    color:#6F9CEB;
+}
+.ex7 li{
+    color:white
+}

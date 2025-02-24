@@ -1,0 +1,26 @@
+.ex8{
+    margin-left: 20%;
+}
+.ex8 header{
+    background-color: #6F9CEB;
+    color:#306BAC;
+    margin-right: 30%;
+    padding:5px;
+    font-size:30px;
+}
+.ex8 table{
+    border-collapse: collapse;
+}
+.ex8 table tr:nth-child(odd){
+    background-color: #A3A3A3;
+}
+.ex8 table th{
+    background-color: white;
+} 
+#no{
+    color:#9DD1F1;
+}
+.ex8 img{
+    float: right;
+    margin-right:30%;
+}
