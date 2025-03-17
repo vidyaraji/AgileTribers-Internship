@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint 2 JobSimulation</title>
-    <link rel="stylesheet" href="jobSimulation.css">
-</head>
-<body onload="readAll()">
-    <h1 class="header">Book Catalogue</h1>
-    <div class="container">
-        <div class="addBook" id="addBook">
-            <form>
-                <h1>Add a Book</h1>
-                <label>Name</label>
-                <input type="text" class="name" placeholder="Name of Your Book"><br><br>
-                <label>Author</label>
-                <input type="text" class="author" placeholder="author of the book"><br></br>
-                <label>Category</label>
-                <input type="text" class="category" placeholder="Category of the book"><br></br>
-                <button type="button" onclick="add()">ADD</button>
-            </form>
-        </div>
-        <div class="updateBook">
-            <form>
-                <h1>Update a Book</h1>
-                <input type="text" hidden class="no">
-                <label>Name</label>
-                <input type="text" class="nameUpdate" ><br><br>
-                <label>Author</label>
-                <input type="text" class="authorUpdate"><br><br>
-                <label>Category</label>
-                <input type="text" class="categoryUpdate"><br><br>
-                <button type="button" onclick="update()">UPDATE</button>
-            </form>
-        </div>
-        <div class="search"><input type="text" class="searchBook" placeholder="Search a Book">
-        <button type="button" onclick="search()">SEARCH</button></div>
-        <div class="detailsOfBooks">
-            <table>
-                <thead>
-                    <th>NO</th>
-                    <th>NAME</th>
-                    <th>AUTHOR</th>
-                    <th>CATEGORY</th>
-                    <th>ACTIONS</th>
-                </thead>
-                <tbody class="books">
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <script src="/jobSimulation.js"></script>
-</body>
+<html>
+    <head>
+        <title>Job Simulation Sprint II</title>
+    </head>
+    <body>
+        <script src="jobsimulation.js"></script>
+    </body>
 </html>
