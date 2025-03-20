@@ -1,0 +1,72 @@
+/*Exercise 4*/
+.Ex4{
+    margin: 2%;
+    width:400px;
+}
+.Ex4_inner1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e3eff0;
+}
+.Ex4_inner2{
+    display: flex;
+    gap:10px;
+    flex-basis:20px;
+}
+.Ex4_inner3{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    height:150px;
+}
+.Ex4_inner4{
+    display: flex;
+    gap:10px;
+}
+.Ex4 header,.Ex4 article,.Ex4 main,.Ex4 footer{
+    background-color: #a7cacd;
+}
+
+.Ex4 .box1{
+    background-color: rgb(63,122,128);
+    color: white;
+}
+.Ex4 .box2{
+    padding: 10px;
+    text-align: center;
+}
+.Ex4 .box3{
+    padding: 20px;
+}
+.Ex4 .box4{
+    padding: 30px;
+    flex-grow:1;
+}
+.Ex4 .box5{
+    flex-grow:2;
+    padding: 30px;
+}
+.Ex4 .box6{
+    flex-grow:1;
+    background-color: yellow;
+}
+.Ex4 .box7{
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Ex4 .box8{
+    padding: 20px;
+    flex-grow: 1;
+}
+.Ex4 .box9{
+    padding: 20px;
+    background-color: yellow;
+}
+.Ex4 .box10{
+    padding: 10px;
+}
+.Ex4 .inner_Container{
+    margin:3%;
+}

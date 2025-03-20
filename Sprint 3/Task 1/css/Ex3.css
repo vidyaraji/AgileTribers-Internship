@@ -1,0 +1,33 @@
+/*Exercise 3*/
+.Ex3{
+    margin: 2%;
+    border: 2px solid black;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Ex3_inner{
+    display:flex;
+    height:80px;
+}
+.Ex3 header{
+    background-color:rgb(255,201,255);
+    padding: 10px;
+}
+.Ex3 nav{
+    background-color: rgb(154,20,236);
+    color: white;
+}
+.Ex3 aside{
+    background-color: rgb(228, 136, 199);
+    padding:20px;
+}
+.Ex3 main{
+    flex-basis:400px;
+    padding:20px;
+}
+.Ex3 footer{
+    background-color: rgb(203,135,245);
+    padding: 10px;
+}

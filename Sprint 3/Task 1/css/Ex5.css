@@ -1,0 +1,42 @@
+/*Exercise 5*/
+.Ex5{
+    margin:2%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 550px;
+    text-align: center;
+}
+.Ex5 nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.Ex5 header{
+    background-color: #ebebeb;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.Ex5 nav{
+    background-color: #ebebeb;
+}
+.Ex5 main{
+    background-color: #ebebeb;
+    flex-basis: 130px;
+}
+.Ex5 .Ex5_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.Ex5_inner article,.Ex5_inner aside,.Ex5_inner main{
+    background-color: #ebebeb;
+    height: 100px;
+    flex-basis: 150px;
+}
+.Ex5 footer{
+    background-color: #ebebeb;
+    flex-basis: 50px;
+    padding: 5px;
+}

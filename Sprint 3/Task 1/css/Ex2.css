@@ -1,0 +1,25 @@
+/*Exercise 2*/
+.Ex2{
+    margin:2%;
+    border: 3px solid black;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.Ex2 header{
+    background-color:rgb(255,201,255);
+    padding: 10px;
+}
+.Ex2 nav{
+    background-color: rgb(154,20,236);
+    color:white;
+}
+.Ex2 main{
+    padding: 40px;
+}
+.Ex2 footer{
+    background-color: rgb(203,135,245);
+    padding:10px;
+}
