@@ -1,0 +1,51 @@
+/*Exercise 2*/
+.Ex2{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    flex-wrap: wrap;    
+    gap:1%;
+    background-color: #b4ddc3;
+    width: 550px;
+    height:350px;
+    margin: 2%;
+}
+.Ex2_inner1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Ex2_inner1 .box1,.Ex2_inner1 .box2,.Ex2_inner1 .box3 {
+    background-color: #cd7d78;
+    padding: 30px;
+    height: 2px;
+    flex-basis: 20%;
+}
+.Ex2_inner2{
+    display: flex;
+    justify-content: space-around;
+}
+.Ex2_inner3{
+    display: flex;
+    background-color: #7d8273;
+    justify-content: space-around;
+    /* padding: 40px; */
+    flex-basis: 47%;
+}
+.Ex2_inner3 .box4{
+    background-color: yellow;
+    padding: 30px;
+    margin:50% auto;
+    flex-basis: 5%;
+}
+.Ex2_inner4{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-basis:47%;
+}
+.Ex2_inner4 .box5,.Ex2_inner4 .box6,.Ex2_inner4 .box7,.Ex2_inner4 .box8{
+    background-color: #87965f;
+    padding: 30px;
+    
+}
+
