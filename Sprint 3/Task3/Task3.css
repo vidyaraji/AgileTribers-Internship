@@ -1,0 +1,142 @@
+*{
+    margin:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Delicious+Handrawn&family=Lexend+Giga:wght@100..900&family=Playwrite+HU&family=Rubik+Distressed&family=Tangerine:wght@700&display=swap');
+.head{
+    width:80%;
+    margin:2% auto;
+}
+.header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 30px;
+    color:white;
+}
+.header {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+.title{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+.header div{
+    margin-left: 5%;
+}
+.header nav{
+    margin-right: 5%;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+}
+.header li a {
+    text-decoration: none; 
+    padding: 30px;
+    color:white;
+}
+.nav{
+    padding: 10px;
+}
+.hero{
+    background-color:gainsboro;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.hero h1{
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.hero div{
+    margin-top:2%;
+    margin-left:5%;
+    padding: 5px;
+}
+.hero p,.hero h1{
+    padding: 10px;
+}
+.hero img{
+    margin-top:2%;
+    margin-right: 5%;
+    padding: 5px;
+}
+.button{
+    background-color:orangered;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    padding: 15px;
+    color:white;
+    cursor: pointer;
+}
+.cards{
+    margin: 4% 6%;
+    display: flex;
+    flex-direction: column;
+}
+.image_cards{
+    margin:3% 0;
+    display: flex;
+    gap:20px;
+}
+.image_cards h2,h1{
+    padding: 10px 0;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 700;
+    font-style: normal;
+} 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+.first_inner{
+    flex-basis: 30%;
+    /* margin-left: 6%; */
+    padding: 40px;
+}
+.second_inner{
+    flex-basis: 30%;
+    padding: 40px;
+}
+.third_inner{
+    flex-basis: 30%;
+    /* margin-right: 3%; */
+    padding: 40px;
+}
+.first_inner div div{
+    display: flex;
+}
+.first_inner .date{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+.first_inner div{
+    margin: 5px;
+}
+.first_inner h2,.second_inner h2,.third_inner h2{
+    margin-bottom:10% ;
+    font-family: "Lexend Giga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style:oblique;
+}
+.third_inner div{
+    display: flex;
+    margin:3%;
+}
+
