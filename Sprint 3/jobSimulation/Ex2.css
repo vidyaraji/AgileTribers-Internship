@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+.card1Ex2{
+    margin: 10% auto;
+    margin-bottom: 0;
+    color: black; 
+    background-color: aliceblue;
+    width: 60%;
+    height: 50%;
+    border-top: 7px solid #c39141;
+    border-bottom: 7px solid #c39141;
+    border-left: 3px solid #c39141;
+    border-right: 3px solid #c39141;
+    border-radius: 30px;
+    display: flex;
+    rotate: -5deg;
+}
+.sideBar_Ex2{
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    color: #c39141;
+    font-weight: bold;
+    font-size: 17px;
+    border-left: 0.1rem dotted black;
+    padding: 10px;
+}
+.maincontainer1_Ex2{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 80%;
+    background-image: url("worldmapEx2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.barcode_Ex2{
+    font-family: "Libre Barcode 39", system-ui;
+    font-weight: 500;
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    margin: 3%;
+}
+.container1_Ex2{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container1_Ex2 div div{
+    margin-top:2%;
+}
+.container1_inner1{
+    display: flex;
+    justify-content: space-between;
+}
+.headFont_Ex2{
+    font-family: "Tomorrow", sans-serif;
+    font-weight:bold;
+}
+.footFont_Ex2{
+    font-family: "Tomorrow", sans-serif;
+    font-weight:100;
+}
+.maincontainer2_Ex2{
+    flex-basis: 20%;
+    border-left: 0.1rem dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.maincontainer2_Ex2 div{
+    margin: 4%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight:50;
+    font-size: 14px;
+}
+.maincontainer2_inner{
+    display: flex;
+}
+
+
+.card2Ex2{
+    color:white;
+    margin: 1% auto;
+    margin-top: 2%;
+    color: black; 
+    background-color: aliceblue;
+    width: 60%;
+    height: 50%;
+    border-top: 7px solid #c39141;
+    border-bottom: 7px solid #c39141;
+    border-left: 3px solid #c39141;
+    border-right: 3px solid #c39141;
+    border-radius: 30px;
+    display: flex;
+    rotate: 5deg;
+}
+.sideBarcard2_Ex2{
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    color: #c39141;
+    font-weight: bold;
+    font-size: 17px;
+    border-left: 0.1rem dotted black;
+    padding: 10px;
+}
+.maincontainer1card2_Ex2{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 80%;
+    background-image: url("worldmapEx2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.barcodecard2_Ex2{
+    font-family: "Libre Barcode 39", system-ui;
+    font-weight: 500;
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    margin: 3%;
+}
+.container1card2_Ex2{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container1card2_Ex2 div div{
+    margin-top:2%;
+}
+.container1card2_inner1{
+    display: flex;
+    justify-content: space-between;
+}
+.maincontainer2card2_Ex2{
+    flex-basis: 20%;
+    border-left: 0.1rem dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.maincontainer2card2_Ex2 div{
+    margin: 4%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight:50;
+    font-size: 14px;
+}
+.maincontainer2card2_inner{
+    display: flex;
+}
