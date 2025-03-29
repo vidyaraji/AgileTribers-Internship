@@ -1,0 +1,57 @@
+body{
+    margin: 5%;
+}
+#Ex1{
+    padding: 30px;
+    border:none;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 15px;
+}
+#Ex2 button{
+    margin-top: 5%;
+    padding: 30px;
+    border:none;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: brown;
+    border-radius: 15px;
+}
+.Ex3{
+    margin-top: 5%;
+}
+.Ex3 input, .Ex4 input,.Ex5 input{
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    border:3px solid black;
+    width:15%;
+}
+.Ex3 button,.Ex4 button,.Ex6 button,.Ex8 button{
+    margin-top: 2%;
+    padding: 20px;
+    border:none;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: brown;
+    border-radius: 15px;
+}
+.Ex4,.Ex5,.Ex6,.Ex8{
+    margin-top: 5%;
+}
+
+#Ex7{
+    padding: 20px;
+    width: 15%;
+    height: 100px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
