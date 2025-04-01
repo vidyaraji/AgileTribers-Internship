@@ -1,0 +1,17 @@
+[
+    {
+        "name":"joe",
+        "age":"20",
+        "city":"tenkasi"
+    },
+    {
+        "name":"Priya",
+        "age":"22",
+        "city":"Tirunelveli"
+    },
+    {
+        "name":"Kannagi",
+        "age":"27",
+        "city":"Madurai"
+    }
+]
