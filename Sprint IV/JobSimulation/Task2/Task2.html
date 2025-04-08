@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="Task2.css">
+</head>
+<body>
+    <h1>Library Books Management</h1>
+    <div class="bookContainer">
+        <div class="inputBooks">
+            <input type="text" name="BookName" id="BookName" placeholder="Enter Your Book name"><input type="text" name="BookAuthor" id="BookAuthor" placeholder="Enter Author Name">
+        </div>
+        <div><button class="addbtn">ADD</button></div>
+        <div><button class="editbtn">EDIT</button></div>
+        <div class="listBooks">
+            <ul class="books">
+                <div class="list">
+                    <div class="names"><li><span class="NameOfBook">Crime and Punishment: Dostoevsky</span> By <span class="AuthorOfBook">Karl Marx</span></li></div>
+                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
+                <div class="list">
+                    <div class="names"><li><span class="NameOfBook">The Guide</span> By <span class="AuthorOfBook">R K Narayanan</span></li></div>
+                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
+                <div class="list">
+                    <div class="names"><li><span class="NameOfBook">Utopia: Sir Thomas Moor</span> By <span class="AuthorOfBook">Charles Darwin</span></li></div>
+                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
+            </ul>
+        </div>
+    </div>
+    <script src="Task2.js"></script>
+</body>
+</html>
