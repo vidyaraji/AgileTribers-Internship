@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Simulation</title>
+    <link href="jobsimulation.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="header">STUDENTS TO DO LISTS</h1>
+    <div class="Successfull">✅ Successfully Inserted</div>
+    <div id="toDoLists">
+    <div id="assignments">
+        <h2>To Do Lists Of Assignments</h2>
+        <div class="searchNamesAss searchNames">
+            <input type="text" placeholder="Enter Name To Search"><button onclick="search(event)">Search</button>
+        </div>
+        <div><ol></ol></div>
+        <button id="addAssign" onclick="assignmentbtn()">Add Students</button>
+    </div>
+    <div id="addingStudents">
+        <input type="text" placeholder="Enter Student Name"><br>
+        <button id="ass" onclick="addStudentAss()">Add Students</button>
+        <button id="sem" onclick="addStudentSem()">Add Students</button>
+    </div>
+    <div id="seminors">
+        <h2>To Do Lists Of Seminors</h2>
+        <div class="searchNamesSem searchNames">
+            <input type="text" placeholder="Enter Name To Search"><button onclick="search(event)">Search</button>
+        </div>
+        <div><ol></ol></div>
+        <button id="addSem"onclick="seminorbtn()">Add Students</button>
+    </div>
+    </div>
+    <script src="jobSimulation.js"></script>
+</body>
+</html>
