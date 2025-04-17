@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    /* background-color: #EFEFF0; */
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #CDD7D6  url('bg.png') no-repeat center fixed;
+}
+.header{
+    background-color: #102542;
+    margin: 0;
+    padding: 45px;
+    color:whitesmoke;
+}
+#toDoLists{
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+.value{
+    flex-grow: 1;
+    margin: 2%;
+}
+#assignments{
+    border:3px solid black;
+    border-radius: 5%;
+    width: 40%;
+}
+.studlist li {
+    /* padding: 5px; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBEFBF;
+    margin: 1%;
+    font-style: italic;
+}
+.Successfull{
+    position: absolute;
+    display: none;
+    background-color: green;
+    color:white;
+    padding: 5px;
+    width: 20%;
+    margin: 1% auto;
+    left:40%;
+    font-size: 25px;
+    border:5px solid black;
+}
+.studlist{
+    padding: 5px;
+    font-size: 18px;
+}
+.studlist li:hover{
+    background-color: #89043D;
+    color:white;
+    scale:1.05;
+    font-weight: bolder;
+}
+#assignments button,#seminors button,#addingStudents button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: large;
+    background-color: #92828D;
+    font-weight: bolder;
+    font-style: oblique;
+}
+#seminors{
+    border:3px solid black;
+    border-radius: 5%;
+    width: 40%;
+}
+#addingStudents{
+    display: none;
+    border:3px solid black;
+    border-radius: 5%;
+    width: 40%;
+    height: 100%;
+}
+#addingStudents input{
+    padding: 10px;
+    width:70%;
+    margin:4%;
+    font-size: 18px;
+    font-style: italic;
+}
+.searchNames{
+    display: none;
+}
+.searchNames input{
+    width: 50%;
+    padding: 10px;
+}
+#edit,#dlt{
+    cursor: pointer;
+    font-size: 20px;
+}
+#edit:hover,#dlt:hover{
+    color:red;
+    font-weight: bold;
+}
