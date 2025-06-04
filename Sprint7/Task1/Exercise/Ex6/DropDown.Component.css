@@ -1,0 +1,32 @@
+.DropDownMenu{
+    position: absolute;
+    top: 80%;
+    left:50%;
+}
+.DropDownMenu ul{
+    list-style: none;
+    background-color:aliceblue;
+    border:1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    color:brown;
+    position: relative;
+}
+.DropDownMenu ul li{
+    padding: 5px;
+}
+
+.DropDownMenu ::after{
+    content: '';
+    background-color: aliceblue;
+    padding: 4%;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top:-6px;
+    left:20px;
+    rotate:-40deg;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+
+}
