@@ -1,0 +1,62 @@
+body{
+    background-image:url(image1.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.outercard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.StudentDataCard{
+    width: 50%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    align-items: center;
+}
+.card{
+    border:2px solid black;
+    padding: 5%;
+    width:40%;
+    background-color: rgba(255, 253, 246,0.5);
+    position: relative;
+}
+.card h2{
+    color:brown;
+    font-weight: bold;
+    font-size: 40px;
+}
+.card div{
+    font-size:20px;
+    padding: 3px;
+    font-weight: bold;
+}
+.card::before{
+    content:url('profile.png');
+    position: absolute;
+    top:-110px;
+    left:150px;
+}
+button{
+    position:sticky;
+    top:0;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    rotate: 180deg;
+    cursor: pointer;
+}
+.NoData{
+    background-color: rgba(0,0,0,0.2);
+    border: 2px solid black;
+    padding: 10%;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
