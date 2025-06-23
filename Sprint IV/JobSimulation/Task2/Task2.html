@@ -3,29 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task2</title>
+    <title>Document</title>
     <link rel="stylesheet" href="Task2.css">
 </head>
-<body>
-    <h1>Library Books Management</h1>
-    <div class="bookContainer">
-        <div class="inputBooks">
-            <input type="text" name="BookName" id="BookName" placeholder="Enter Your Book name"><input type="text" name="BookAuthor" id="BookAuthor" placeholder="Enter Author Name">
+<body class="Main">
+    <div >
+        <div class="Navbar">
+            <div class="Navbar1">
+                <div class="input"><input type="text" onChange="InputSearch()" class="inputSearch" placeholder="search Task...."></div>
+                <div class="search"><img src="search.png" width="50px"></div>
+                <div class="AddTask"><img src="addnewtask.png" width="40px" height="40px"><p>Add New Task</p></div>
+            </div>
+            <div class="profile">
+                <img src="profile1.png" width="60px" border="5px">
+                <img src="profile2.png" width="60px" border="5px">
+                <img src="profile3.png" width="60px" border="5px">
+                <img src="profile4.jpeg" width="60px" border="5px">
+            </div>
         </div>
-        <div><button class="addbtn">ADD</button></div>
-        <div><button class="editbtn">EDIT</button></div>
-        <div class="listBooks">
-            <ul class="books">
-                <div class="list">
-                    <div class="names"><li><span class="NameOfBook">Crime and Punishment: Dostoevsky</span> By <span class="AuthorOfBook">Karl Marx</span></li></div>
-                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
-                <div class="list">
-                    <div class="names"><li><span class="NameOfBook">The Guide</span> By <span class="AuthorOfBook">R K Narayanan</span></li></div>
-                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
-                <div class="list">
-                    <div class="names"><li><span class="NameOfBook">Utopia: Sir Thomas Moor</span> By <span class="AuthorOfBook">Charles Darwin</span></li></div>
-                    <div><div class="edit" onclick="editfunc(event)">Edit</div><div class="delete" onclick="delfunc(event)">Delete</div></div></div>
-            </ul>
+        <div class="AddNewTask">
+            <div class="TaskBox">
+                <div class="close">
+                    <button onclick="Close()">❌</button>
+                </div>
+                <form name="AddTaskForm">
+                    <p>Add New Task</p>
+                    <input type="text" placeholder="Enter Task name" name="TaskName">
+                    <textarea placeholder="Enter the task" name="Description"></textarea>
+                    <label>Enter The Due Date   <input type="date" name="DueDate"></label>
+                    <select name="Assignee">
+                        <option disabled selected>Select Assignee</option>
+                        <option value="Lokesh">Lokesh</option>
+                        <option value="Ashwin">Ashwin</option>
+                        <option value="Sanjay">Sanjay</option>
+                        <option value="Shreya">Shreya</option>
+                    </select>
+                    <div class="Update"><button class="UpdateBtn" >Update</button></div>
+                    <div class="AddTo">
+                        <p  > Add To </p>
+                        <div class="buttons">
+                            <button class="NewTaskBtn" >New Task</button>
+                            <button class="ScheduledTaskBtn">scheduled Task</button>
+                            <button class="InprogressTaskBtn">Inprogress</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="Tasks">
+            <div class="NewTask">
+                <h3><u>New Task</u></h3>
+                <div class="Bugs1">
+                <div class="NewTaskBugs profile1">
+                    <div class="title">Bug Fixing</div>
+                    <div class="profile">
+                        <div><img src="profile1.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                <div class="NewTaskBugs profile3">
+                    <div class="title">Web Development</div>
+                    <div class="profile">
+                        <div><img src="profile3.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                        <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                <div class="NewTaskBugs profile4">
+                    <div class="title">Writing Queries</div>
+                    <div class="profile">
+                        <div><img src="profile4.jpeg" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                </div>
+            </div>
+            <div class="scheduledTask">
+                <h3>Scheduled Task</h3>
+                <div class="Bugs2">
+                <div class="ScheduledBugs profile2">
+                    <div class="title">Minutes of Meeting</div>
+                    <div class="profile">
+                        <div><img src="profile2.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                <div class="ScheduledBugs profile4">
+                    <div class="title">BackEnd Bugs</div>
+                    <div class="profile">
+                        <div><img src="profile4.jpeg" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                </div>
+            </div>
+            
+            <div class="InprogressTask">
+                <h3>Inprogress Task</h3>
+                <div class="Bugs3">
+                <div class="InprogressBugs profile1">
+                    <div class="title">DastaBase Crash</div>
+                    <div class="profile">
+                        <div><img src="profile1.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                <div class="InprogressBugs profile3">
+                    <div class="title">Bug Fixing</div>
+                    <div class="profile">
+                        <div><img src="profile3.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                </div>
+            </div>
+            <div class="CompletedTask">
+                <h3>Completed Task</h3>
+                <div class="Bugs4">
+                <div class="CompletedBugs profile2">
+                    <div class="title">FrontEnd Bugs</div>
+                    <div class="profile">
+                        <div><img src="profile2.png" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                <div class="CompletedBugs profile4">
+                    <div class="title">Bug Fixing</div>
+                    <div class="profile">
+                        <div><img src="profile4.jpeg" width="40px" border="2px"></div>
+                        <div>Fix All The Bugs Reported By Team</div>
+                    </div>
+                    <div class="date">
+                        <p style="font-weight: bold;">Due Date</p>
+                        <p>2025-06-13</p>
+                    </div>
+                    <button class="Edit" onclick="Edit(event)"><u>Edit</u></button>
+                        <button class="delete" onclick="Delete(event)"><u>delete</u></button>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="Task2.js"></script>
