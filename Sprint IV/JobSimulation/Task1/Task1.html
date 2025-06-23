@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Studentinfo.css">
+    <title>StudentInfo</title>
+</head>
+<body>
+    <div class="NavBar">
+        <ul>
+            <li><div><img src="home.png" width="20px"></div><div> Home</div></li>
+            <li><div><img src="admission.png" width="22px"> </div><div>Admissions</div></li>
+            <li><div><img src="graduate1.png" width="24px"></div><div> Academics</div></li>
+            <li><div><img src="campus.png" width="24px"></div><div> Campus & Community</div></li>
+            <li><div><img src="info.png" width="25px"></div><div>About</div></li>
+            <li><div><img src="contact-mail.png" width="23px"></div><div>Contact</div></li>
+        </ul>
+    </div>
+    <div class="HomePage">
+        <div class="image">
+            <img src="mainimg.jpg"class="image1" width="30%" height="60%">
+            <img src="college.jpg" width="40%" class="image2">
+            <img src="mainimg1.jpg" class="image3" width="28%" height="60%">
+            <div class="buttons">
+            <button>Photos</button>
+            <button>Admission</button>
+            <button class="StudReg">Student registration</button>
+            </div>
+        </div>
+        <div class="placementsContainer">
+           <div> 56.95 <br>Lakh P.A. Highest CTC</div>
+           <div>9.08 <br>Lakh P.A. Average CTC</div>
+           <div>75% <br>Fee Waiver For Top Rankers</div>
+           <div>92% <br>Students Placed in 2024</div>
+        </div>
+        <div class="About">
+            <div class="About1">
+                <p>About</p>
+                <div>Our College is a multidisciplinary research university with multiple campuses across India. Amrita is ranked A++ by NAAC and is the 7th 
+                    Ranked University in India as per the National Institution Ranking Framework (NIRF) for 2024, it also one of 
+                    India's leading research universities. The institution is headquartered in Ettimadai,Tamil Nadu, and has campuses in
+                    Four Indian states: Kerala, Tamil Nadu, Karnataka and Andhra Pradesh. Amrita Vishwa Vidyapeetham organises a full-fledged 
+                    campus placement campaign with MNCs and reputed companies' world over every year.
+                    92% of students secured positions with 200 companies, attaining a highest CTC of 56.95 LPA and an average CTC of 9 LPA.
+                </div>
+            </div>
+            <div class="About2">
+                <img src="aboutimg.jpeg">
+            </div>
+        </div>
+    </div>
+        <div class="welcomeBoard">
+            <div class="welcome">
+                <h2 class="span1">Your Gateway to Academic Excellence!</h2>
+                <h4 class="span2">We are delighted to have you here! Our student registration portal is 
+                    designed to make your enrollment process simple, fast, and user-friendly.</h4>
+                <div class="LogInform">
+                    <form name="LogInform">
+                        <p>Log In Form(Admin Use)</p>
+                        <div><input type="text" placeholder="UserName" name="admin"></div>
+                        <div><input type="password" placeholder="password" name="password"></div>
+                    </form>
+                    <div class="welcomebtn">
+                        <button onclick="registerPage()"><img src="arrow.png" width="70px" height="70px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+    <div class="formContainer">
+        <div class="form" >
+            <img src="graduate.png" >
+            <h3>STUDENT REGISTRATION FORM</h3>
+            <form name="StudentInformation" method="get">
+                <div>
+                    <input type="text" id="fullName" name="FullName" placeholder="Enter our FullName" autocomplete="off" required>
+                </div>
+                <div class="gender">
+                    <span>
+                        <input type="radio" value="male" name="Gender" id="male" required>
+                        <label for="male">Male</label>
+                    </span>
+                    <span>
+                        <input type="radio" value="female" name="Gender" id="female" required>
+                        <label for="female">Female</label>
+                    </span>
+                </div>
+                <div>
+                    <input type="number" id="rollnum" name="RollNum" placeholder="Enter Your RollNumber" autocomplete="off" required>
+                </div>
+                <div>
+                    <input type="tel" name="StudentMobileNumber"  placeholder="StudentMobileNumber" autocomplete="off"  required>
+                </div>
+                <div>
+                    <input type="mail" name="MailId" placeholder="MailId" autocomplete="off" required>
+                </div>
+                <div>
+                    <select for="Department"name="Department" required>
+                        <option disabled selected>Select Your Department</option>
+                        <option value="Bsc Computer Science">Bsc Computer Science</option>
+                        <option value="Bsc Physics">Bsc Physics</option>
+                        <option value="Bsc Chemistry">Bsc Chemistry</option>
+                        <option value="Bsc Maths">Bsc Maths</option>
+                        <option value="Bsc Biology">Bsc Biology</option>
+                        <option value="Bsc Nursing">Bsc Nursing</option>
+                        <option value="Bachelor of Journalism">Bachelor of Journalism</option>
+                        <option value="Bsc IT">Bsc IT</option>
+                        <option value="BCA">BCA</option>
+                        <option value=" Bsc Hotel Management">Bsc Hotel Management</option>
+                        <option value="Bsc Forensic Science of Criminology">Bsc Forensic Science of Criminology</option>
+                        <option value="BA English">BA English</option>
+                        <option value="BA Tamil">BA Tamil</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="fatherName" name="fatherName" placeholder="FatherName" autocomplete="off" required>
+                </div>
+                <div>
+                    <input type="text" id="motherName" name="motherName" placeholder="MotherName" autocomplete="off" required>
+                </div>
+                <div>
+                    <input type="tel" name="ParentMobileNumber" placeholder="ParentMobileNumber" autocomplete="off" required>
+                </div>
+                <div>
+                    <textarea placeholder="Address" autocomplete="off"></textarea>
+                </div>
+                <div>
+                    <input type="tel" name="city" placeholder="Enter Your City" autocomplete="off" required>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="contact">
+        <p>For Application Related Queries, Email :abc@gmail.com <br>Phone : 9966332255</p>
+        <div class="image">
+            <img src="instagram.png" width="40px">
+            <img src="twitter.png" width="40px">
+            <img src="facebook.png" width="40px">
+        </div>
+    </div>
+    <script src="Studentinfo.js"></script>
+</body>
+</html>
