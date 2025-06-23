@@ -1,0 +1,199 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5%;
+    position: relative;
+    color:black;
+    
+}
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    border-bottom: 2px solid black;
+}
+.Navbar1{
+    display: flex;
+}
+.Navbar .AddTask{
+    cursor: pointer;
+}
+.AddNewTask{
+    display:none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    padding: 10px;
+}
+.TaskBox {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    width: 20%;
+    padding: 50px;
+    border: 3px solid black;
+}
+.TaskBox form{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+.TaskBox input,.TaskBox textarea,.TaskBox select{
+    width: 100%;
+    padding: 10px;
+    border:3px solid black;
+}
+.TaskBox label{
+    font-size: 18px;
+}
+.TaskBox p{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+.TaskBox button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    cursor:pointer;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button,.Update button{
+    background-color: #88D18A;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+.Update{
+    display:none;
+}
+.TaskBox .close{
+    position: absolute;
+    right:10px;
+    top:10px;
+    padding: 5px;
+}
+.TaskBox .close button{
+    font-size:30px;
+
+}
+.Navbar .input{
+    padding: 20px;
+    padding-right: 0;
+}
+.Navbar .search{
+    padding: 17px;
+    padding-left: 0;
+    cursor: pointer;
+}
+.Navbar input{
+    border:3px solid black;
+    width:400px;
+    padding: 10px;
+    margin: 0;
+    font-size: large;
+    border-radius: 20px;
+}
+.profile img{
+    border-radius: 50%;
+}
+.Tasks{
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.AddTask {
+    display: flex;
+    padding: 20px;
+}
+.AddTask p{
+    font-size: 20px; 
+    padding: 8px; 
+    margin: 0px;
+}
+.Tasks h3{
+    font-size: 24px;
+    font-style: italic;
+}
+.NewTask .Bugs1, .scheduledTask .Bugs2,.InprogressTask .Bugs3,.CompletedTask .Bugs4{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.NewTaskBugs,.ScheduledBugs,.InprogressBugs,.CompletedBugs {
+    position: relative;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.NewTaskBugs .title,.ScheduledBugs .title,.InprogressBugs .title,.CompletedBugs .title{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color:brown;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.NewTaskBugs .profile,.ScheduledBugs .profile,.InprogressBugs .profile,.CompletedBugs .profile{
+    display: flex;
+}
+.NewTaskBugs .date,.ScheduledBugs .date,.InprogressBugs .date,.CompletedBugs .date{
+    display: flex;
+    justify-content: end;
+    gap:5px;
+}
+.NewTaskBugs button,.ScheduledBugs button,.InprogressBugs button,.CompletedBugs button{
+    display: flex;
+    flex-direction: row ;
+    justify-content: end;
+    position: absolute;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    color:blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.NewTaskBugs button:hover,.ScheduledBugs button:hover,.InprogressBugs button:hover,.CompletedBugs button:hover{
+    scale: 1.3;
+    color:tomato
+}
+.NewTaskBugs .delete,.ScheduledBugs .delete,.InprogressBugs .delete,.CompletedBugs .delete{
+    padding: 0;
+    right:50px;
+    bottom: 10px;
+    text-align: right;
+    margin:0;
+}
+.NewTaskBugs .Edit,.ScheduledBugs .Edit,.InprogressBugs .Edit,.CompletedBugs .Edit{
+    padding: 0;
+    right:15px;
+    bottom: 10px;
+    text-align: right;
+    margin:0;
+}
+.profile1{
+    background-color:#8CB369;
+    border:2px solid black;
+}
+.profile2{
+    background-color: #B2F7EF;
+    border:2px solid black;
+}
+.profile3{
+    background-color:#b6e1fe;
+    border:2px solid black;
+}
+.profile4{
+    background-color: #42ba96;
+    border:2px solid black;
+}
