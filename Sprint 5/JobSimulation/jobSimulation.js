@@ -1,105 +1,166 @@
-let dataEntriesAss=[];
-let dataEntriesSem=[];
+let Students=document.querySelector('.Students');
+let Projects=document.querySelector('.Projects');
+let Subjects=document.querySelector('.Subjects');
 
-function assignmentbtn(){
-    document.querySelector('#seminors').style.display="none";
-    document.querySelector('#addAssign').style.display="none";
-    document.querySelector('#addingStudents').style.display="inline";   
-    document.querySelector('#sem').style.display="none"; 
+function StudentNo(){
+    let studentsName=document.querySelectorAll('.Students table tr');
+    let length=studentsName.length
+    document.querySelector('.ListHeader .StudentsNo span').innerText=length-1;
+}
+
+function ProjectsNo(){
+    let studentsName=document.querySelectorAll('.Projects table tr');
+    let length=studentsName.length
+    document.querySelector('.ListHeader .ProjectsNo span').innerText=length-1;
+}
+
+function SubjectsNo(){
+    let studentsName=document.querySelectorAll('.Subjects table tr');
+    let length=studentsName.length
+    document.querySelector('.ListHeader .SubjectsNo span').innerText=length-1;
 }
 
 
-function seminorbtn(){
-    document.querySelector('#assignments').style.display="none";
-    document.querySelector('#addSem').style.display="none";
-    document.querySelector('#addingStudents').style.display="inline"; 
-    document.querySelector('#ass').style.display="none";  
-}
-
-
-function addStudentAss(){
-    let value=document.querySelector('#addingStudents input').value;
-    if(value==""){
-        alert("Enter Student Name")
+Students.addEventListener('click',(event)=>{
+    let element=event.target;
+    if(element.innerText=='Add'){
+        let name=document.querySelector('.Student').value;
+        let RegNo=document.querySelector('.regNo').value;
+        let Date=document.querySelector('.date').value;
+        document.querySelector('.Students table').innerHTML+=`<tr>
+                                    <td>${name}</td>
+                                    <td>${RegNo}</td>
+                                    <td>${Date}</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>`
+        StudentNo();
+        document.querySelector('.Student').value="";
+        document.querySelector('.regNo').value="";
+        document.querySelector('.date').value="";
     }
-    else{
-        document.querySelector('.searchNames').style.display="inline";
-        let assignEl=document.querySelector('#assignments div ol');
-        dataEntriesAss.push(value);
-        assignEl.innerHTML+=`<div class="studlist">
-        <li><div class="value">${value.toUpperCase()}</div>
-        <div><div id="edit" onclick="edit(event)">📝</div><div id="dlt" onclick="dlt(event)">❌</div></div>
-        </li></div>`
-        document.querySelector('.Successfull').style.display="block";
-        setTimeout(() => {
-        document.querySelector('.Successfull').style.display="none";
-    }, 3000);
-}
-    document.querySelector('#addingStudents input').value="";
-}
+    if(element.innerText=='Edit'){
+        let trEl=element.closest('tr');
+        let name=trEl.children[0].innerText;
+        let RegNo=trEl.children[1].innerText;
+        let date=trEl.children[2].innerText;
+        document.querySelector('.Student').value=name;
+        document.querySelector('.regNo').value=RegNo;
+        document.querySelector('.date').value=date;
+        let update=document.querySelector('.Students .Edit');
+        update.style.display="inline";
+        document.querySelector('.Students .Add').style.display="none";
+        update.addEventListener('click',()=>{
+        trEl.children[0].innerText=document.querySelector('.Student').value;
+        trEl.children[1].innerText=document.querySelector('.regNo').value;
+        trEl.children[2].innerText=document.querySelector('.date').value;
+        document.querySelector('.Students .Add').style.display="inline";
+        update.style.display="none";
+        document.querySelector('.Student').value="";
+        document.querySelector('.regNo').value="";
+        document.querySelector('.date').value="";
+        })
+    }
+    if(element.innerText=='Delete'){
+        deleteEl=element.parentNode.parentNode;
+        deleteEl.remove()
+        StudentNo();
+    }
+})
 
 
-function dlt(event){
-    targetEl=event.target.parentNode.parentNode.parentNode;
-    targetEl.remove();
-}
+Projects.addEventListener('click',(event)=>{
+    let element=event.target;
+    if(element.innerText=='Add'){
+        let projects=document.querySelector('.projects').value;
+        let projectsHandled=document.querySelector('.projectsHandled').value;
+        document.querySelector('.Projects table').innerHTML+=`<tr>
+                                    <td>${projects}</td>
+                                    <td>${projectsHandled}</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>`
+        ProjectsNo();
+         document.querySelector('.projects').value="";
+        document.querySelector('.projectsHandled').value="";
+    }
+    if(element.innerText=='Edit'){
+        let trEl=element.closest('tr');
+        let projects=trEl.children[0].innerText;
+        let projectsHandled=trEl.children[1].innerText;
+        document.querySelector('.projects').value=projects;
+        document.querySelector('.projectsHandled').value=projectsHandled;
+        let update=document.querySelector('.Projects .Edit');
+        update.style.display="inline";
+        document.querySelector('.Projects .Add').style.display="none";
+        update.addEventListener('click',()=>{
+        trEl.children[0].innerText=document.querySelector('.projects').value;
+        trEl.children[1].innerText=document.querySelector('.projectsHandled').value;
+        document.querySelector('.Projects .Add').style.display="inline";
+        update.style.display="none";
+        document.querySelector('.projects').value="";
+        document.querySelector('.projectsHandled').value="";
+        })
+    }
+    if(element.innerText=='Delete'){
+        deleteEl=element.parentNode.parentNode;
+        deleteEl.remove()
+        ProjectsNo();
+    }
+})
 
-function edit(event){   
-    let value=event.target.parentNode.parentNode.children[0].innerText;
-    document.querySelector('#addingStudents input').value=value;
-    targetEl=event.target.parentNode.parentNode.parentNode;
-    targetEl.remove();
-}
+Subjects.addEventListener('click',(event)=>{
+    let element=event.target;
+    if(element.innerText=='Add'){
+        let subject=document.querySelector('.subject').value;
+        let subjectHandle=document.querySelector('.subjectHandle').value;
+        document.querySelector('.Subjects table').innerHTML+=`<tr>
+                                    <td>${subject}</td>
+                                    <td>${subjectHandle}</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>`
+        SubjectsNo();
+        document.querySelector('.subject').value="";
+        document.querySelector('.subjectHandle').value="";
+    }
+    if(element.innerText=='Edit'){
+        let trEl=element.closest('tr');
+        let subject=trEl.children[0].innerText;
+        let subjectHandle=trEl.children[1].innerText;
+        document.querySelector('.subject').value=subject;
+        document.querySelector('.subjectHandle').value=subjectHandle;
+        let update=document.querySelector('.Subjects .Edit');
+        update.style.display="inline";
+        document.querySelector('.Subjects .Add').style.display="none";
+        update.addEventListener('click',()=>{
+        trEl.children[0].innerText=document.querySelector('.subject').value;
+        trEl.children[1].innerText=document.querySelector('.subjectHandle').value;
+        document.querySelector('.Subjects .Add').style.display="inline";
+        update.style.display="none";
+        document.querySelector('.subject').value="";
+        document.querySelector('.subjectHandle').value="";
+        })
+    }
+    if(element.innerText=='Delete'){
+        deleteEl=element.parentNode.parentNode;
+        deleteEl.remove()
+        SubjectsNo();
+    }
+});
 
-function addStudentSem(){
-    let value=document.querySelector('#addingStudents input').value;
-    if(value==""){
-        alert("Enter Student Name")
-    }
-    else{
-        document.querySelector('.searchNamesSem').style.display="inline";
-        let assignEl=document.querySelector('#seminors div ol');
-        dataEntriesSem.push(value);
-        assignEl.innerHTML+=`<div class="studlist">
-        <li><div class="value">${value.toUpperCase()}</div>
-        <div><div id="edit" onclick="edit(event)">📝</div><div id="dlt" onclick="dlt(event)">❌</div></div>
-        </li></div>`
-        document.querySelector('.Successfull').style.display="block";
-        setTimeout(() => {
-        document.querySelector('.Successfull').style.display="none";
-    }, 3000);
-    }
-    document.querySelector('#addingStudents input').value="";
-}
 
-function search(event){
-    searchingName=event.target.parentNode.children[0].value;
-    if(dataEntriesAss.find(Element=>Element===searchingName)){
-        targetValue=dataEntriesAss.find(Element=>Element===searchingName);
-        let assignEl=document.querySelector('#assignments div ol');
-        assignEl.innerHTML=`<div class="studlist">
-        <li><div class="value">${targetValue.toUpperCase()}</div>
-        <div><div id="edit" onclick="edit(event)">📝</div><div id="dlt" onclick="dlt(event)">❌</div></div>
-        </li></div>`
-    }
-    else{
-        alert("Name is Not Found");
-    }
-    event.target.parentNode.children[0].value=""
-}
 
-function search(event){
-    searchingName=event.target.parentNode.children[0].value;
-    if(dataEntriesSem.find(Element=>Element===searchingName)){
-        targetValue=dataEntriesSem.find(Element=>Element===searchingName);
-        let assignEl=document.querySelector('#seminors div ol');
-        assignEl.innerHTML=`<div class="studlist">
-        <li><div class="value">${targetValue.toUpperCase()}</div>
-        <div><div id="edit" onclick="edit(event)">📝</div><div id="dlt" onclick="dlt(event)">❌</div></div>
-        </li></div>`
-    }
-    else{
-        alert("Name is Not Found");
-    }
-    event.target.parentNode.children[0].value=""
+function Search(event){
+    value=event.target.value;
+    targetEL=event.target.parentNode.parentNode.parentNode.classList[1];
+        targetEl1=document.querySelectorAll(`.${targetEL} table tr`);
+        targetEl1.forEach(element => {
+            result=element.children[0].innerText;
+            if(result.includes(value)){
+                header=document.querySelector(`.${targetEL} table tr`).outerHTML;  
+                document.querySelector(`.${targetEL} table `).innerHTML=header+element.outerHTML;
+            }
+            else{
+                header=document.querySelector(`.${targetEL} table tr`).outerHTML;
+                document.querySelector(`.${targetEL} table `).innerHTML=header+`<tr>No Records Found</tr>`
+            }
+        });
 }
