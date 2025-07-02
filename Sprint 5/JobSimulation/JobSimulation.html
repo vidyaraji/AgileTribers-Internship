@@ -3,35 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Simulation</title>
-    <link href="jobsimulation.css" rel="stylesheet">
+    <title>JobSimulation</title>
+    <link rel="stylesheet" href="JobSimulation.css">
 </head>
 <body>
-    <h1 class="header">STUDENTS TO DO LISTS</h1>
-    <div class="Successfull">✅ Successfully Inserted</div>
-    <div id="toDoLists">
-    <div id="assignments">
-        <h2>To Do Lists Of Assignments</h2>
-        <div class="searchNamesAss searchNames">
-            <input type="text" placeholder="Enter Name To Search"><button onclick="search(event)">Search</button>
+    <div class="main">
+    <div class="profile">
+        <img src="profile.jpg" width="250px">
+        <p class="name"><b>Tara Zyra</b><br><span>Incharge Of I Computer Science</span></p>
+        <p style="text-align: center;"><b>Crescent Moon University</b></p>
+        <div class="details">
+            <div><p><b>Qualification : </b><span> Msc Phd</span></div>
+            <div><p><b>Experience : </b><span>&nbsp; &nbsp;   5 Years</span></div>
+            <div><p><b>DOB : </b><span>&nbsp; &nbsp; &nbsp; &nbsp; 23/07/1996</span></div>
         </div>
-        <div><ol></ol></div>
-        <button id="addAssign" onclick="assignmentbtn()">Add Students</button>
     </div>
-    <div id="addingStudents">
-        <input type="text" placeholder="Enter Student Name"><br>
-        <button id="ass" onclick="addStudentAss()">Add Students</button>
-        <button id="sem" onclick="addStudentSem()">Add Students</button>
-    </div>
-    <div id="seminors">
-        <h2>To Do Lists Of Seminors</h2>
-        <div class="searchNamesSem searchNames">
-            <input type="text" placeholder="Enter Name To Search"><button onclick="search(event)">Search</button>
+    <div class="List">
+        <div class="ListHeader">
+        <div class="StudentsNo">
+            <span>3</span><br>
+            Students
         </div>
-        <div><ol></ol></div>
-        <button id="addSem"onclick="seminorbtn()">Add Students</button>
+        <div class="SubjectsNo">
+            <span>3</span><br>
+            Subjects
+        </div>
+        <div class="ProjectsNo">
+            <span>2</span><br>
+            Projects
+        </div>
+        </div>
+        <!-- <hr> -->
+        <div class="StudentList">
+            <div class="Cont Subjects">
+                <div>
+                    <p>Subjects</p>
+                    <div>
+                        <input type="text" placeholder="Name of The Subject" class="subject">
+                        <input type="text" placeholder="Subject Handled By" class="subjectHandle">
+                        <button class="Edit">Update</button>
+                        <button class="Add">Add</button>
+                    </div>
+                    <div><input type="text" placeholder="Search" class="Search" onchange="Search(event)"></div>
+                    <div>
+                        <table border="2px">
+                            <tr>
+                                <th>Name Of Subject</th>
+                                <th>Handling By</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Communicative English</td>
+                                <td>Premalatha</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Tamil</td>
+                                <td>Arasi</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Discrete Mathematics</td>
+                                <td>Ganga</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="Cont Projects">
+                <div>
+                    <p>Projects</p>
+                    <div>
+                        <input type="text" placeholder="Name of The Subject" class="projects">
+                        <input type="text" placeholder="Subject Handled By" class="projectsHandled">
+                        <button class="Edit">Update</button>
+                        <button class="Add">Add</button>
+                    </div>
+                    <div><input type="text" placeholder="Search" class="Search" onchange="Search(event)"></div>
+                    <div>
+                        <table border="4px">
+                            <tr>
+                                <th>Name Of Project</th>
+                                <th>Handling By</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Web Techno</td>
+                                <td>Yamuna</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Crypto</td>
+                                <td>Nandhini</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+                <div class="Cont Students">
+                    <div>
+                        <p>Students</p>
+                        <div>
+                        <input type="text" placeholder="Name of The Student" class="Student">
+                        <input type="number" placeholder="Register Number" class="regNo">
+                        <input type="date" class="date">
+                        <button class="Edit">Update</button>
+                        <button class="Add">Add</button>
+                    </div>
+                    <div><input type="text" placeholder="Search" class="Search" onchange="Search(event)"></div>
+                        <div>
+                            <table border="2px">
+                                <tr>
+                                    <th>Name Of the Student</th>
+                                    <th>Register No.</th>
+                                    <th>Admission Date</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Rajeshwari</td>
+                                    <td>220</td>
+                                    <td>2024-05-06</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Rajeshwari</td>
+                                    <td>220</td>
+                                    <td>2024-05-06</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Rajeshwari</td>
+                                    <td>220</td>
+                                    <td>2024-05-06</td>
+                                <td><button>Edit</button> <button>Delete</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
     </div>
-    <script src="jobSimulation.js"></script>
+    <script src="JobSimulation.js"></script>
 </body>
 </html>
