@@ -1,0 +1,43 @@
+.Task1NavBar{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    padding: 10px;
+}
+.nav{
+    color:aliceblue;
+    list-style: none;
+    text-decoration: none;
+}
+.Home,.Contact{
+    text-align: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading{
+    font-size: 25px;
+    background-color: cadetblue;
+    padding: 20px;
+    letter-spacing: 10px;
+    color:brown;
+    font-weight: 600;
+}
+.content{
+    margin: 20px;
+    padding: 20px;
+    color:yellowgreen;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+button{
+    padding: 15px;
+    background-color:tomato;
+    border:none;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+.BackHome{
+    margin: 5%;
+    text-align: center;
+}
